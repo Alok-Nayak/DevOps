@@ -1,0 +1,11 @@
+---
+- name: deploy in tomcat
+  hosts: all
+  become: true
+  tasks:
+    - name: copying .war  to node
+      copy:
+        src: /home/ansadmin/time-tracker-web-0.5.0-SNAPSHOT.war
+        dest: /root/tomcat/webaps
+        mode: 0600
+  
