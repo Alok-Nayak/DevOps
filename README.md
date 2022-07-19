@@ -10,8 +10,6 @@ nginx pod (db-pod) contains the image used by webapp pod.
 Both are exposed through db-svc & webapp-svc .
 
 
-
-
 /usr/share/nginx/html/ -----> nginx html file location
 
 /usr/local/apache2/htdocs -----> httpd html file location
